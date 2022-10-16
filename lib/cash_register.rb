@@ -1,3 +1,4 @@
+require 'pry'
 class CashRegister
     attr_reader :total, :discount , :items, :last_transaction
     attr_accessor :total
@@ -30,5 +31,5 @@ class CashRegister
     end
 
 end
-
+binding.pry
 reg = CashRegister.new
